@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap");
+.header_movie_review_app {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  padding: 0px 10px;
+  background-color: #4a5fd4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+}
+
+.header_movie_review_app .heading {
+  background: #4a5fd4;
+  color: #fff;
+}
+
+.header_movie_review_app .heading span {
+  font-size: 5vw;
+  font-family: "Tangerine", cursive;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .heading span {
+    font-size: 10vw;
+  }
+}
+
+.header_movie_review_app .heading h2 {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.header_movie_review_app .search_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+.header_movie_review_app .search_container input {
+  padding: 10px 25px;
+  width: 36vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container input {
+    font-size: 4vw;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    padding: 10px 0px;
+  }
+}
+
+.header_movie_review_app .search_container button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #02224d;
+  border: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 4vw;
+    padding: 10px 2px;
+  }
+}
+
+.main_container {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .display_movie_content {
+  width: 50%;
+  height: 80vh;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 15px;
+  overflow-y: auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container .display_movie_content img {
+  height: 300px;
+  border-radius: 5px;
+}
+
+.main_container .display_movie_content .cinema_plot {
+  padding: 0px 20px;
+}
+
+.main_container .display_movie_content .cinema_plot span {
+  font-size: 1vw;
+  text-align: justify;
+  font-weight: 500;
+  color: #777575;
+}
+
+.main_container .display_movie_content .cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container .display_movie_content .cast .cast_header {
+  width: 100%;
+}
+
+.main_container .display_movie_content .cast .cast_details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px 0px;
+  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  padding: 10px 0px;
+}
+
+.main_container .display_movie_content .cast .cast_details span {
+  font-size: 1vw;
+  padding: 5px 3px;
+  background: #dadada;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5fd4;
+  border-radius: 0;
+}
+/*# sourceMappingURL=global.css.map */
