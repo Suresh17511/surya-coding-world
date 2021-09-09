@@ -1,0 +1,66 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 237048,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/v4fm1BjHZvhwWaz6TPix3phDR2n.jpg",
+          "genre_ids": [28, 35, 18],
+          "id": 224061,
+          "media_type": "movie",
+          "original_language": "te",
+          "original_title": "అత్తారింటికి దారేది",
+          "overview": "Raghunandan is a billionaire and a big business Magnet based in Milan of Italy. He however is unhappy and wishes to reconcile with his estranged daughter Sunanda whom he sent out of his home because she married a Pleader Rajasekhar against his wishes. His grandson Gautham Nanda promises Raghunandan that he would bring his Atha to their home on his Birthday.  Sunanda has 2 Daughters Prameela and Sashi. Gautham enters the house as Siddhu, a driver who was appointed after saving Rajasekhar from a Heart stroke. Gautham woos Prameela but his game ends after he comes to know that Prameela is already in love. Sashi turns rival to Gautham and is suspicious of him and Paddu his friend and male nurse appointed to take care of Rajasekhar.",
+          "poster_path": "/htv7AcIhJc94dPmbkhVdZ5tFET7.jpg",
+          "release_date": "2013-09-27",
+          "title": "Atharintiki Daaredi",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 20
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/mTHMQQKp9SvTT6Juwk2MgJrTmxL.jpg",
+          "genre_ids": [28, 35],
+          "id": 111836,
+          "media_type": "movie",
+          "original_language": "te",
+          "original_title": "గబ్బర్ సింగ్",
+          "overview": "A boy runs away from home, angry with his stepfather and half-brother. Years later, he becomes a police inspector and fights a notorious criminal.",
+          "poster_path": "/7HwczTLCE66fx0WZXD8sS0wG7N3.jpg",
+          "release_date": "2012-05-11",
+          "title": "Gabbar Singh",
+          "video": false,
+          "vote_average": 5.5,
+          "vote_count": 14
+        },
+        {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [28, 35],
+          "id": 73578,
+          "media_type": "movie",
+          "original_language": "te",
+          "original_title": "జల్సా",
+          "overview": "Sanjay (Pawan Kalyan) falls in love with Indu (Kamalini Mukherjee). Her father Rammohan Reddy (Prakash Raj) doesnt approve of it & she is married to someone else. Later, Bhagyamathi (Ileana) falls for him & he goes to meet her father who turns out to be Rammohan Reddy. Somewhere in between Sanjays life as a naxal is depicted.",
+          "poster_path": "/hjnNZConGXfX5CqxmajOkZQJ3sk.jpg",
+          "release_date": "2008-04-02",
+          "title": "Jalsa",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 13
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Pawan Kalyan",
+      "popularity": 4.05,
+      "profile_path": "/vlz8vSF2Cub4Cm5LmCnM3yk1kTT.jpg"
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 1
+}

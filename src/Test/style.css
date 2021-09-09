@@ -1,0 +1,14 @@
+.person_data {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.person_data .container {
+  width: 200px;
+}
+.person_data .container img {
+  width: 100%;
+  height: auto;
+}

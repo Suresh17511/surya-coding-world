@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700&display=swap");
+.header_movie_review_app {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  padding: 0px 10px;
+  background-color: #4a5fd4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+}
+
+.header_movie_review_app .heading {
+  background: #4a5fd4;
+  color: #fff;
+}
+
+.header_movie_review_app .heading span {
+  font-size: 5vw;
+  font-family: "Tangerine", cursive;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .heading span {
+    font-size: 10vw;
+  }
+}
+
+.header_movie_review_app .heading h2 {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.header_movie_review_app .search_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+.header_movie_review_app .search_container input {
+  padding: 10px 25px;
+  width: 36vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container input {
+    font-size: 4vw;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    padding: 10px 0px;
+  }
+}
+
+.header_movie_review_app .search_container button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #02224d;
+  border: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 4vw;
+    padding: 10px 2px;
+  }
+}
+
+.main_container {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.main_container .celebrity_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 0px;
+}
+
+.main_container .celebrity_container img {
+  height: 200px;
+}
+
+.main_container .celebrity_container .view_more {
+  padding: 10px 0px;
+  background: #4a5fd4;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.actor_full_details {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.actor_full_details .left_section {
+  width: 25%;
+  height: 100vh;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actor_full_details .left_section h1 {
+  font-size: 2.5vw;
+}
+
+.actor_full_details .left_section .details_item {
+  margin-bottom: 15px;
+}
+
+.actor_full_details .left_section .details_item p {
+  font-size: 1.1vw;
+  padding: 0;
+  margin: 5px 0px;
+}
+
+.actor_full_details .left_section img {
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.actor_full_details .right_section {
+  width: 75%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actor_full_details .right_section p {
+  font-size: 1.1vw;
+  padding-right: 5px;
+}
+
+.actor_full_details .right_section .movie_list {
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.actor_full_details .right_section .movie_list .movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.actor_full_details .right_section .movie_list .movie img {
+  height: 200px;
+  border-radius: 5px;
+}
+
+.actor_full_details .right_section .movie_list .movie p {
+  font-size: 1vw;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.actor_full_details .right_section .movie_details {
+  width: 100%;
+  font-weight: bold;
+}
+
+.actor_full_details .right_section .movie_details .each_cinema_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.actor_full_details .right_section .movie_details .each_cinema_details .year {
+  width: 20%;
+}
+
+.actor_full_details .right_section .movie_details .each_cinema_details p {
+  font-size: 1.1vw;
+  margin-left: 10px;
+}
+
+.actor_full_details .right_section .movie_details .each_cinema_details .character {
+  font-size: 1.1vw;
+  color: #5c5757;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5fd4;
+  border-radius: 0;
+}
+/*# sourceMappingURL=global.css.map */

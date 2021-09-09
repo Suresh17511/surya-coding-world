@@ -1,0 +1,74 @@
+@import "../../css/mixins";
+.header_movie_review_app {
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  padding: 0px 10px;
+  background-color: $c;
+  display: flex;
+  flex-direction: row-reverse;
+  @include mQ(640px) {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .heading {
+    background: $c;
+    color: #fff;
+    span {
+      font-size: 5vw;
+      font-family: "Tangerine", cursive;
+      @include mQ(640px) {
+        font-size: 10vw;
+      }
+    }
+    h2 {
+      display: inline-block;
+      font-style: italic;
+      font-weight: 200;
+    }
+  }
+  .search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mQ(640px) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    input {
+      padding: 10px 25px;
+      width: 36vh;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      border: none;
+      @include mQ(640px) {
+        font-size: 4vw;
+        flex: 2;
+        padding: 10px 0px;
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 10px 15px;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      background: rgb(2, 34, 77);
+      border: none;
+      color: #fff;
+      @include mQ(640px) {
+        flex: 1;
+        font-size: 4vw;
+        padding: 10px 2px;
+      }
+    }
+  }
+}
