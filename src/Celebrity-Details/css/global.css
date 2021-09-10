@@ -164,6 +164,15 @@
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .actor_full_details .left_section {
   width: 25%;
   height: 100vh;
@@ -177,8 +186,23 @@
           flex-direction: column;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .left_section {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .actor_full_details .left_section h1 {
   font-size: 2.5vw;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .left_section h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
 }
 
 .actor_full_details .left_section .details_item {
@@ -191,10 +215,23 @@
   margin: 5px 0px;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .left_section .details_item p {
+    font-size: 4vw;
+  }
+}
+
 .actor_full_details .left_section img {
   width: 90%;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .left_section img {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .actor_full_details .right_section {
@@ -211,9 +248,23 @@
           flex-direction: column;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .actor_full_details .right_section p {
   font-size: 1.1vw;
   padding-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section p {
+    font-size: 4vw;
+    padding: 10px 5px;
+  }
 }
 
 .actor_full_details .right_section .movie_list {
@@ -237,7 +288,7 @@
 }
 
 .actor_full_details .right_section .movie_list .movie img {
-  height: 200px;
+  height: 150px;
   border-radius: 5px;
 }
 
@@ -246,6 +297,12 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section .movie_list .movie p {
+    font-size: 4vw;
+  }
 }
 
 .actor_full_details .right_section .movie_details {
@@ -269,14 +326,33 @@
   width: 20%;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section .movie_details .each_cinema_details .year {
+    font-size: 4vw;
+  }
+}
+
 .actor_full_details .right_section .movie_details .each_cinema_details p {
   font-size: 1.1vw;
   margin-left: 10px;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section .movie_details .each_cinema_details p {
+    margin: 0;
+    font-size: 4vw;
+  }
+}
+
 .actor_full_details .right_section .movie_details .each_cinema_details .character {
   font-size: 1.1vw;
   color: #5c5757;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section .movie_details .each_cinema_details .character {
+    font-size: 3vw;
+  }
 }
 
 body {

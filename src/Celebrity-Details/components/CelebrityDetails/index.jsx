@@ -33,7 +33,9 @@ const CelebrityFullDetails = () => {
       .catch((err) => console.log(err));
   }, [actorId, setMovieList]);
   console.log(movieList);
-
+  movieList?.cast?.sort((a, b) => {
+    return b.release_date?.slice(0, 4) - a.release_date?.slice(0, 4);
+  });
   return (
     <div className="actor_full_details">
       <div className="left_section">
