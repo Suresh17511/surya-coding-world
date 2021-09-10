@@ -22,12 +22,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0px;
   }
 }
@@ -73,6 +73,26 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .header_movie_review_app .search_container form {
+    margin-top: 20px;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header_movie_review_app .search_container input {
   padding: 10px 25px;
   width: 36vh;
@@ -86,11 +106,11 @@
 
 @media screen and (max-width: 640px) {
   .header_movie_review_app .search_container input {
+    width: 75%;
+    margin-bottom: 10px;
     font-size: 4vw;
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
     padding: 10px 0px;
+    border-radius: 5px;
   }
 }
 
@@ -109,11 +129,10 @@
 
 @media screen and (max-width: 640px) {
   .header_movie_review_app .search_container button {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    width: 70%;
     font-size: 4vw;
-    padding: 10px 2px;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
 
