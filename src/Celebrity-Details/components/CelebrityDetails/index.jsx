@@ -108,32 +108,39 @@ const CelebrityFullDetails = () => {
             </div>
           ))}
         </div>
-        <h4>Acting({movieList?.cast?.length})</h4>
-        <div className="movie_details">
-          {movieList?.cast?.map((details) => (
-            <div className="each_cinema_details" key={details.id}>
-              <div className="year">{details.release_date?.slice(0, 4)}</div>
-              {details.poster_path ? (
-                <img
-                  src={`${img_300}${details.poster_path}`}
-                  alt={details.id}
-                  height="100px"
-                />
-              ) : (
-                <img src={noPicture} alt={details.id} height="100px" />
-              )}
-              <p>
-                <b>{details.original_title}</b>
-              </p>
-              {details.character && (
-                <p className="character">as {details.character}</p>
-              )}
+        {movieList?.cast?.length > 0 && (
+          <React.Fragment>
+            <h4>Acting({movieList?.cast?.length})</h4>
+            <div className="movie_details">
+              {movieList?.cast?.map((details) => (
+                <div className="each_cinema_details" key={details.id}>
+                  <div className="year">
+                    {details.release_date?.slice(0, 4)}
+                  </div>
+                  {details.poster_path ? (
+                    <img
+                      src={`${img_300}${details.poster_path}`}
+                      alt={details.id}
+                      height="100px"
+                    />
+                  ) : (
+                    <img src={noPicture} alt={details.id} height="100px" />
+                  )}
+                  <p>
+                    <b>{details.original_title}</b>
+                  </p>
+                  {details.character && (
+                    <p className="character">as {details.character}</p>
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </React.Fragment>
+        )}
+
         {movieList?.crew?.length > 0 && (
           <>
-            <h4>Production</h4>
+            <h4>Crew</h4>
             <div className="movie_details">
               {movieList?.crew?.map((details) => (
                 <div className="each_cinema_details" key={details.id}>
