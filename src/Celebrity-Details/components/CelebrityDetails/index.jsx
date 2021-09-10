@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Slider from "infinite-react-carousel";
 import axios from "axios";
 const CelebrityFullDetails = () => {
   const img_300 = "https://image.tmdb.org/t/p/w300";
@@ -95,19 +94,27 @@ const CelebrityFullDetails = () => {
             <p>{actorFullDetails.biography}</p>
           </div>
         )}
-        <h4>Known for</h4>
-        <div className="movie_list">
-          {movieList?.cast?.map((movie) => (
-            <div className="movie" key={movie.title}>
-              {movie.poster_path ? (
-                <img src={`${img_300}${movie.poster_path}`} alt={movie.title} />
-              ) : (
-                <img src={noPicture} alt={movie.title} />
-              )}
-              <p>{movie.title}</p>
+        {movieList?.cast?.length > 0 && (
+          <React.Fragment>
+            <h4>Known for</h4>
+            <div className="movie_list">
+              {movieList?.cast?.map((movie) => (
+                <div className="movie" key={movie.title}>
+                  {movie.poster_path ? (
+                    <img
+                      src={`${img_300}${movie.poster_path}`}
+                      alt={movie.title}
+                    />
+                  ) : (
+                    <img src={noPicture} alt={movie.title} />
+                  )}
+                  <p>{movie.title}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </React.Fragment>
+        )}
+
         {movieList?.cast?.length > 0 && (
           <React.Fragment>
             <h4>Acting({movieList?.cast?.length})</h4>
