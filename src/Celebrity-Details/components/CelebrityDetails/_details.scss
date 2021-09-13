@@ -87,6 +87,9 @@
         border: none;
         font-size: 1.1vw;
         font-weight: bold;
+        @include mQ(640px) {
+          font-size: 4vw;
+        }
         option {
           font-size: 1.2vw;
           font-weight: bold;

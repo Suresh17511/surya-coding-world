@@ -330,6 +330,12 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 640px) {
+  .actor_full_details .right_section .acting_area select {
+    font-size: 4vw;
+  }
+}
+
 .actor_full_details .right_section .acting_area select option {
   font-size: 1.2vw;
   font-weight: bold;

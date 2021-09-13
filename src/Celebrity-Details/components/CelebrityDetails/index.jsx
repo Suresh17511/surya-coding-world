@@ -13,8 +13,6 @@ const CelebrityFullDetails = () => {
   const [externalLinks, setExternalLinks] = useState([]);
   const [actorCategory, setActorCategory] = useState("movie_credits");
 
-  console.log(actorCategory);
-
   const queryParams = new URLSearchParams(window.location.search);
   const actorId = queryParams.get("id");
   useEffect(() => {
