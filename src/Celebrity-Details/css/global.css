@@ -240,6 +240,32 @@
   }
 }
 
+.actor_full_details .left_section .external_links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+  .actor_full_details .left_section .external_links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.actor_full_details .left_section .external_links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
 .actor_full_details .left_section img {
   width: 90%;
   border-radius: 5px;
@@ -286,6 +312,30 @@
   }
 }
 
+.actor_full_details .right_section .acting_area {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.actor_full_details .right_section .acting_area select {
+  padding: 0%;
+  margin: 0%;
+  border: none;
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+.actor_full_details .right_section .acting_area select option {
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
 .actor_full_details .right_section .movie_list {
   width: 99%;
   display: -webkit-box;
@@ -304,6 +354,7 @@
           flex-direction: column;
   text-align: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .actor_full_details .right_section .movie_list .movie img {
@@ -330,6 +381,7 @@
 }
 
 .actor_full_details .right_section .movie_details .each_cinema_details {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

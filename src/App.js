@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-// import MovieReviewsApp from "./Movie-Reviews-App";
 import { ArrowRight } from "react-bootstrap-icons";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CelebrityDetails from "./Celebrity-Details";
+import Home from "./Home";
 import SideBar from "./Side-bar";
-// import Test from "./Test";
 
 function App() {
   const [leftContainer, setLeftContainer] = useState({
@@ -35,9 +34,10 @@ function App() {
             </button>
           )}
           <Switch>
-            <Route path="/">
-              {/* <MovieReviewsApp /> */}
-              {/* <Test /> */}
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/celebrity">
               <CelebrityDetails />
             </Route>
           </Switch>

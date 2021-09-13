@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLeft } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const SideBar = ({ leftContainer, changeSize }) => {
   return (
@@ -20,10 +21,10 @@ const SideBar = ({ leftContainer, changeSize }) => {
       <div className="items_list">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/movieReviewApp">Movie Review App</a>
+            <Link to="/celebrity">Celebrity</Link>
           </li>
         </ul>
       </div>

@@ -36,7 +36,20 @@
         }
       }
     }
-
+    .external_links {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      @include mQ(640px) {
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
     img {
       width: 90%;
       border-radius: 5px;
@@ -64,6 +77,23 @@
         padding: 10px 5px;
       }
     }
+    .acting_area {
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      select {
+        padding: 0%;
+        margin: 0%;
+        border: none;
+        font-size: 1.1vw;
+        font-weight: bold;
+        option {
+          font-size: 1.2vw;
+          font-weight: bold;
+          padding: 5px 0px;
+        }
+      }
+    }
     .movie_list {
       width: 99%;
       display: flex;
@@ -73,6 +103,7 @@
         flex-direction: column;
         text-align: center;
         margin-right: 10px;
+        cursor: pointer;
         img {
           height: 150px;
           border-radius: 5px;
@@ -92,6 +123,7 @@
       width: 100%;
       font-weight: bold;
       .each_cinema_details {
+        cursor: pointer;
         display: flex;
         text-align: center;
         align-items: center;

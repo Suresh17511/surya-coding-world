@@ -22,7 +22,7 @@ const CelebrityDetails = () => {
     <Router>
       <div className="celebrity_details_app">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/celebrity">
             <Header setCelebrityName={setCelebrityName} />
             <Main celebrityData={celebrityData} />
           </Route>
