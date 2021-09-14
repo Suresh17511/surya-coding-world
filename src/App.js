@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArrowRight } from "react-bootstrap-icons";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CelebrityDetails from "./Celebrity-Details";
+import CelebrityFullDetails from "./Celebrity-Details/components/CelebrityDetails";
 import Home from "./Home";
 import SideBar from "./Side-bar";
 
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route exact path="/celebrity">
               <CelebrityDetails />
+            </Route>
+            <Route exact path="/details/:actorId">
+              <CelebrityFullDetails />
             </Route>
           </Switch>
         </div>

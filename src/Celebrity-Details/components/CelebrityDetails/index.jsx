@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router";
+import { useParams, useHistory } from "react-router-dom";
 import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from "react-icons/fa";
 
 const CelebrityFullDetails = () => {
@@ -12,9 +12,8 @@ const CelebrityFullDetails = () => {
   const [movieList, setMovieList] = useState([]);
   const [externalLinks, setExternalLinks] = useState([]);
   const [actorCategory, setActorCategory] = useState("movie_credits");
+  const { actorId } = useParams();
 
-  const queryParams = new URLSearchParams(window.location.search);
-  const actorId = queryParams.get("id");
   useEffect(() => {
     axios
       .get(
@@ -55,7 +54,6 @@ const CelebrityFullDetails = () => {
       .then((res) => setMovieList(res.data))
       .catch((err) => console.log(err));
   }, [actorId, setMovieList, actorCategory]);
-  console.log(movieList);
   movieList?.cast?.sort((a, b) => {
     return b.release_date?.slice(0, 4) - a.release_date?.slice(0, 4);
   });

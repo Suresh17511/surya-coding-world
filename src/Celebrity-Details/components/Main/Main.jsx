@@ -22,7 +22,7 @@ const Main = ({ celebrityData }) => {
             </span>
             <button
               onClick={() => {
-                history.push(`/details?id=${actor.id}`);
+                history.push(`/details/${actor.id}`);
               }}
               className="view_more"
             >
